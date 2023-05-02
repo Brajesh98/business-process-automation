@@ -2,14 +2,14 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "projectName": {
-            "value": ""
-          },
-          "repositoryToken": {
-            "value": ""
-          },
-          "repositoryUrl": {
-            "value": ""
-          }
+      "projectName": {
+        "value": "[format('bpa{0}', toLower(uniqueString(resourceGroup().id)))]"
+      },
+      "repositoryToken": {
+        "value": "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"
+      },
+      "repositoryUrl": {
+        "value": "https://github.com/Brajesh98/business-process-automation"
+      }
     }
 }
