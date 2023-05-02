@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "projectName": {
-        "value": "[format('bpa{0}', toLower(uniqueString(resourceGroup().id)))]"
+        "value": "bpademo123"
       },
       "repositoryToken": {
         "value": "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"
